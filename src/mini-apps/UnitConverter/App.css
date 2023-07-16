@@ -1,0 +1,39 @@
+.converter {
+  margin: 20px;
+  border: 3px solid darkgray;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  flex-direction: column;
+  display: flex;
+  background-color: lightgray;
+}
+
+select {
+  display: inline-block;
+  width: fit-content;
+}
+input {
+  display: inline-block;
+  margin-left: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.convert-value {
+  margin-bottom: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}

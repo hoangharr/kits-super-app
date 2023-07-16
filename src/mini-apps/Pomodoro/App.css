@@ -1,0 +1,22 @@
+.Pomodoro {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+  width: 400px;
+}
+
+label {
+  font-size: 20px;
+  /* margin-right: 10px; */
+  display: inline-block;
+  width: 150px
+}
+input {
+  display: inline-block;
+}

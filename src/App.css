@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+}
+
+li.ant-menu-item.ant-menu-item-selected{
+  background-color: #781d2d;
+}

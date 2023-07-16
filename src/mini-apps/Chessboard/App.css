@@ -1,0 +1,24 @@
+input {
+  display: block;
+}
+
+button {
+  display: flex;
+}
+.board {
+  margin-top: 10px;
+  border: 1px solid black;
+  display: inline-block;
+}
+.color {
+  display: flex;
+}
+.row {
+  line-height: 0;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
