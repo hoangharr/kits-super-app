@@ -283,25 +283,31 @@ function App() {
                     placeholder={tr("Search", lang)}
                     prefix={<SearchOutlined />}
                   />
-                  <Divider type="vertical" />
-                  <Space>
-                    <Dropdown menu={{ items }} trigger={["click"]}>
-                      <a onClick={(e) => e.preventDefault()}>
-                        <Space style={{ color: "#E1E1D9" }}>
-                          <Logo />
-                          HoangDM
-                          <DownCircleFilled />
-                        </Space>
-                      </a>
-                    </Dropdown>
-                  </Space>
+                  {collapsed ? (
+                    <>
+                      <Divider type="vertical" />
+                      <Space>
+                        <Dropdown menu={{ items }} trigger={["click"]}>
+                          <a onClick={(e) => e.preventDefault()}>
+                            <Space style={{ color: "#E1E1D9" }}>
+                              <Logo />
+                              HoangDM
+                              <DownCircleFilled />
+                            </Space>
+                          </a>
+                        </Dropdown>
+                      </Space>
+                    </>
+                  ) : (
+                    <></>
+                  )}
                 </Space>
               </Title>
             </Header>
             <Content
               style={{
                 paddingLeft: 35,
-                color:"white",
+                color: "white",
                 backgroundColor: "#E1E1D9",
                 backgroundImage: "url('src/1084546.png')",
                 backgroundSize: "2000px 900px",
@@ -309,7 +315,9 @@ function App() {
                 backgroundAttachment: "fixed",
               }}
             >
-              <Title level={2} style={{color: "white"}}>{title()}</Title>
+              <Title level={2} style={{ color: "white" }}>
+                {title()}
+              </Title>
               <Switch>
                 <Route path="/helloworld">
                   <HelloWorld />
